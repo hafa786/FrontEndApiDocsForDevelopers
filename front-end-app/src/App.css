@@ -1,0 +1,17 @@
+
+.app-header{
+  background-color: brown;
+  color: #ffffff;
+  padding: 20px;
+}
+.integration{
+  border-left: 6px solid brown;
+  background-color: lightgrey;
+}
+.content-box{
+  padding: 20px;
+  margin-top: 10px;
+}
+.App .navbar-brand {
+  font-weight: bold;
+}
