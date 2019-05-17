@@ -1,7 +1,7 @@
 This project was bootstrapped with React App
 
 ## Structure
-
+```
 ├── back-end-app
     ├── App.js
 ├── front-end-app
