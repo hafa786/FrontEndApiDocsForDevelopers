@@ -1,4 +1,5 @@
 .app-header{
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     background-color:#DF691A;
     color: #ffffff;
     padding: 5px;
@@ -28,18 +29,22 @@
     border: none;
   }
   .search-input {
-      width: 85%;
+      width: 300px;
+      float: left;
+  }
+  .search-button{
+    float: left !important;
   }
   .custom-link{
     color:#DF691A;
   }
   .request-box {
-    /* background-color: lightgrey;  */
-    padding: 20px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    padding: 15px;
     border: 1px solid #DF691A;
   }
 .response-box{
-    /* background-color: lightgrey; */
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     padding: 20px;
     border: 1px solid #DF691A;
   }
@@ -52,6 +57,9 @@
 }
 .parameter-name{
     color: green;
+}
+.parameter-description{
+  font-size: 12px;
 }
 .object-name{
     color:blue;
@@ -70,4 +78,14 @@
 }
 .shift-button{
     padding:20px;
+}
+.definition-box{
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  background-color: #F5F5F5; 
+}
+.definition-datatype{
+  color :#DF691A;
+}
+.footer{
+  padding: 20px;
 }
