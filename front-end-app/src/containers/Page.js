@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "./Page.css";
 
 export default class Login extends Component {
   constructor(props) {
     super(props);
-
+    // Setting up the state objects
     this.state = {
       suggestions: [],
       apiName:'Api Description',
@@ -37,15 +36,10 @@ export default class Login extends Component {
     };
     
   }
+  // can be used as onload functions
   componentDidMount() {
-    console.log('Child did mount.');
-    // $("#q").autocomplete({
-    //   source: availableTags,
-    //   minLength: 0
-    //   }).focus(function(){            
-    //     $(this).autocomplete('search', $(this).val())
-    //   });
   }
+  // api selection
   apiSelect(value){
     this.setState({apiName : value.target.value})
     if (value.target.value == "CSE"){
@@ -91,6 +85,7 @@ export default class Login extends Component {
     }
     this.setState({requestAndResponseBox:false});
   }
+  // api selection for sub-topics
   apiSubTopicSelect(value){
     let definition = [ "Context" , "Promotion","Query","Result","Search"];
     console.log(value.currentTarget.dataset.id);
@@ -129,6 +124,7 @@ export default class Login extends Component {
     this.setState({showDefinition:true});
   }
   }
+  // switching from schema to example for definition data
   shiftSchemaExample(value){
     if (value.currentTarget.dataset.id == 'Schema'){
       this.setState({definitionSchema:true});
@@ -138,6 +134,7 @@ export default class Login extends Component {
       this.setState({definitionExample:true});
     }  
   }
+  // switching from schema to example for SCE data
   shiftResponseSchemaExample(value){
     if (value.currentTarget.dataset.id == 'Schema'){
       this.setState({cseSchema:true});
